@@ -26,11 +26,11 @@ class Map
   end
 
   def keys
-    @map.flatten.select.with_index { |el,i| i.even?}
+    @map.flatten.select.with_index { |_,i| i.even?}
   end
 
   def values
-    @map.flatten.select.with_index { |el,i| i.odd?}
+    @map.flatten.select.with_index { |_,i| i.odd?}
   end
 
   def has_key?(key)
